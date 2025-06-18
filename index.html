@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Livros</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .menu-topo {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            text-align: center;
+        }
+        .menu-topo a {
+            color: rgb(251, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+        }
+        .menu-lateral {
+            width: 250px;
+            background-color: #100e0e;
+            color: white;
+            padding: 20px;
+        }
+        .menu-lateral a {
+            display: block;
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .conteudo {
+            flex-grow: 1;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .livro {
+            border: 1px solid #000000;
+            padding: 10px;
+            text-align: center;
+        }
+        .livro img {
+            width: 100px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-topo">
+        <a href="menu.html">Página Inicial</a>
+        <a href="categoria.html">Categorias</a>
+        <a href="contato.html">Fale conosco</a>
+    </div>
+    <div class="container">
+        <div class="menu-lateral">
+            <h2>Categorias</h2>
+            <a href="#">Ficção</a>
+            <a href="#">Suspense</a>
+            <a href="#">Romance</a>
+            <a href="#">Fantasia</a>
+        </div>
+        <div class="conteudo">
+            <div class="livro">
+                <img src="../Meu Site/livro1.webp" alt="Livro 1">
+                <p>Livro 1</p>
+                <p>39,99</p>
+            </div>
+            <div class="livro">
+                <img src="livro2.jpg" alt="Livro 2">
+                <p>Livro 2</p>
+                <p>49,99</p>
+            </div>
+            <div class="livro">
+                <img src="livro3.jpg" alt="Livro 3">
+                <p>Livro 3</p>
+                <p>49,99</p>
+            </div>
+            <div class="livro">
+                <img src="livro4.jpg" alt="Livro 4">
+                <p>Livro 4</p>
+                <p>49,99</p>
+            </div>
+            <div class="livro">
+                <img src="livro5.jpg" alt="Livro 5">
+                <p>Livro 5</p>
+                49,99
+            </div>
+            <div class="livro">
+                <img src="../Meu Site/livro6.webp" alt="Livro 6">
+                <p>Livro 6</p>
+                <p>39,99</p>
+            </div>
+            <div class="livro">
+                <img src="livro7.jpg" alt="Livro 7">
+                <p>Livro 7</p>
+                <p>49,99</p>
+            </div>
+            <div class="livro">
+                <img src="../Meu Site/livro8.webp" alt="Livro 8">
+                <p>Livro 8</p>
+                <p>19,99</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
